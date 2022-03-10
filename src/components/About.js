@@ -33,7 +33,7 @@ return (
                 <img src={urlFor(author.authorImage).url()} className="rounded w-32 h-32 lg:w-64 mr-8" alt={author.name}/>
                 <div className="text-lg flex flex-col justify-center">
                     <h1 className="cursive text-6xl text-green-300 mb-4">
-                        hey there im {" "}</h1>
+                        hey there im {" "}  </h1>
                         <span className="text-green-100">{author.name}</span>
                     <div className="prose lg:prose-xl text-white"><BlockContent block={author.bio} projectId="8p2h4cq6" dataset="production" /> </div>
                 </div>
