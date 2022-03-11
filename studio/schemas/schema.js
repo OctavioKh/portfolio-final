@@ -10,6 +10,11 @@ import blockContent from './blockContent'
 import post from './post'
 import project from './project'
 import author from './author'
+import about from './about'
+import youtube from './youtube'
+// import bodyPortableText from './objects/bodyPortableText'
+
+
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -21,8 +26,11 @@ export default createSchema({
     // The following are document types which will appear
     // in the studio.
     post,
-    author,
     project,
+    about,
+    author,
+    youtube,
+    // bodyPortableText,
     // category,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas

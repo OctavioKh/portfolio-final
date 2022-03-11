@@ -17,18 +17,18 @@ export default {
           hotspot: true,
         },
       },
-    {
-      name: "projectType",
-      title: "Project Type",
-      type: "string",
-      options: {
-        list: [
-          { value: "personal", title: "Personal" },
-          { value: "client", title: "Client" },
-          { value: "school", title: "School" },
-        ],
-      },
-    },
+    // {
+    //   name: "projectType",
+    //   title: "Project Type",
+    //   type: "string",
+    //   options: {
+    //     list: [
+    //       { value: "personal", title: "Personal" },
+    //       { value: "client", title: "Client" },
+    //       { value: "school", title: "School" },
+    //     ],
+    //   },
+    // },
     {
         name: "link",
         type: "url",

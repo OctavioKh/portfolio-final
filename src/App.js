@@ -6,6 +6,7 @@ import SinglePost from './components/SinglePost';
 import Post from './components/Post';
 import Project from './components/Project';
 import NavBar from './components/NavBar';
+import Contacto from './components/Contacto';
 import React from 'react';
 
 
@@ -20,6 +21,7 @@ function App() {
     <Route caseSensitive={false} element={<SinglePost />} path='/post/:slug' />
     <Route caseSensitive={false} element={<Post />} path='/post' />
     <Route caseSensitive={false} element={<Project />} path='/project' />
+    <Route caseSensitive={false} element={<Contacto />} path='/contacto' />
     </Routes>
     </Router>
   );

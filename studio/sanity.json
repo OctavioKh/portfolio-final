@@ -25,5 +25,9 @@
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
     }
-  ]
+  ],
+  "project": {
+    "name": "CARTEL.ECO",
+    "basePath": "/studio"
+  }
 }

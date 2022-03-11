@@ -8,7 +8,7 @@ export default function NavBar() {
       };
     
   return (
-    <header className="header">
+    <header className="header posicion">
       <div className="container mx-auto flex justify-between">
         <nav className="flex">
           <NavLink
@@ -32,6 +32,11 @@ export default function NavBar() {
           <NavLink   style={({ isActive }) =>
             isActive ? activeStyle : undefined
           } className=" animate__animated animate__fadeIn inflex-flex items-center py-6 px-3 my-6 rounded text-white hover:text-gray-100" to="/about">About</NavLink>
+          <NavLink  style={({ isActive }) =>
+            isActive ? activeStyle : undefined
+          } className="  animate__animated animate__fadeIn inflex-flex items-center py-6 px-3 my-6 rounded text-white hover:text-gray-100"
+ 
+ to="/contacto" >Contacto</NavLink>
         </nav>
         <div></div>
       </div>
