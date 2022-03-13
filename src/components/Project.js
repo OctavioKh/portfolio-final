@@ -99,7 +99,7 @@ export default function Project() {
                 },
                 alt
             }
-        }`
+        }| order(_createdAt desc)`
       )
       .then((data) => setProjectData(data))
       .catch(console.error);
@@ -110,7 +110,7 @@ export default function Project() {
       <main className="fondo min-h-screen p-12  ">
         <section className=" animate__animated animate__fadeIn container mx-auto">
           <h1 className="text-5xl text-white flex justify-center cursive">
-            Noticias
+            NOTICIAS
           </h1>
           {/* <h2 className="text-lg text-gray-600 flex justify-center mb-12">
           Welcome to page
@@ -152,7 +152,7 @@ export default function Project() {
 <div className="caja-z">  <img 
                       src={project.mainImage.asset.url}
                       alt={project.mainImage.alt}
-                      className="img-responsive imagen-z items-center rounded-r object-contain   "
+                      className="img-responsive imagen-z items-center rounded-r  "
                     /></div>
                   
 

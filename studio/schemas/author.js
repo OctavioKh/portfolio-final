@@ -10,7 +10,7 @@ export default {
     },
     {
       name: 'slug',
-      title: 'Slug',
+      title: 'Slug (**Click en Generate)',
       type: 'slug',
       options: {
         source: 'name',

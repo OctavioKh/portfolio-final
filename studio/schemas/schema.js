@@ -12,6 +12,10 @@ import project from './project'
 import author from './author'
 import about from './about'
 import youtube from './youtube'
+import gallery from './gallery'
+import richText from './richText'
+import figure from './figure'
+
 // import bodyPortableText from './objects/bodyPortableText'
 
 
@@ -30,6 +34,9 @@ export default createSchema({
     about,
     author,
     youtube,
+    gallery,
+    richText,
+    figure,
     // bodyPortableText,
     // category,
     // When added to this list, object types can be used as

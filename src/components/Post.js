@@ -31,7 +31,7 @@ export default function Post() {
     <main className="fondo min-h-screen p-12 ">
       <section className=" animate__animated animate__fadeIn container mx-auto">
         <h1 className="text-5xl text-white flex justify-center cursive">
-          Proyectos
+          PROYECTOS
         </h1>
         <h1 className="espacio">&nbsp;</h1>
         {/* <h2 className="text-lg text-gray-600 flex justify-center mb-12"></h2> */}
