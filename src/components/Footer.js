@@ -21,13 +21,13 @@ export default function NavBar2() {
     sanityClient
       .fetch(
         `*[_type == "social"] {
-          linkIg, logoImage1 {
+          linkIg, logoImage2 {
               asset->{
                   _id,
                   url
               },
         }
-     }`, 
+     }`
       )
       .then((data) => setSocialData(data[0]))
       .catch(console.error);
@@ -45,9 +45,9 @@ export default function NavBar2() {
 
 
     
-    <header className="header posicion ">
+    <header className="header  animate__animated animate__fadeIn posicion ">
       <div className="container mx-auto flex justify-between">
-        <nav className="flex ">
+        <nav className="flex">
           <NavLink
             to="/"
             exact="true"
@@ -56,34 +56,20 @@ export default function NavBar2() {
           }
             className="inflex-flex items-center py-6 px-3 mr-4 text-white text-4xl font-bold cursive tracking-widest hover:text-gray-100"
           >
-           <img className="logo animate__animated animate__fadeIn" alt="Logo Cartel" style={{width:150}} src={urlFor(socialData.logoImage1).url()}/>
+           <img className="logo animate__animated animate__fadeIn" alt="Logo Cartel" style={{width:50,height:50}} src={urlFor(socialData.logoImage2).url()}/>
           </NavLink>
-
-<NavLink   style={({ isActive }) =>
-isActive ? activeStyle : undefined
-} className=" animate__animated animate__fadeIn inflex-flex items-center py-6 px-3 my-6 rounded text-white hover:text-gray-100" to="/about">About</NavLink>
-<NavLink  style={({ isActive }) =>
-isActive ? activeStyle : undefined
-} className="  animate__animated animate__fadeIn inflex-flex items-center py-6 px-3 my-6 rounded text-white hover:text-gray-100"
-
-to="/post" >Proyectos</NavLink>
-<NavLink  style={({ isActive }) =>
-isActive ? activeStyle : undefined
-} className="  animate__animated animate__fadeIn inflex-flex items-center py-6 px-3 my-6 rounded text-white hover:text-gray-100" to="/project">Noticias</NavLink>
-
-<NavLink  style={({ isActive }) =>
-isActive ? activeStyle : undefined
-} className="  animate__animated animate__fadeIn inflex-flex items-center py-6 px-3 my-6 rounded text-white hover:text-gray-100"
-
-to="/contacto" >Contacto</NavLink>
           
         </nav>
-
-        {/* <div className="inline-flex py-3 px-3 my-6">
+        <div className="inline-flex py-3 px-3 my-6">
           <SocialIcon className="mr-4" target="_blank" bgColor="#232323"  fgColor="#fff" style={{height:35, width: 35}} alt="instagram" url={socialData.linkIg}  />
-        </div> */}
+        </div>
+       
       </div>
     </header>
     </>
   );
 }
+
+
+
+

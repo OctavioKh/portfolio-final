@@ -32,5 +32,26 @@ export default {
               title: 'Slogan',
               type: 'string',
             },
-  ]
+            {
+              name: 'mainImage',
+              title: 'Image',
+              type: 'image',
+              options: {
+                hotspot: true,
+              },},
+              {
+                name: 'logoImage2',
+                title: 'Monograma',
+                type: 'image',
+                options: {
+                  hotspot: true,
+                },},
+            
+  ],
+  preview: {
+    select: {
+      title: 'name',
+      media: 'image',
+    },
+  },
 };

@@ -15,6 +15,8 @@ import youtube from './youtube'
 import gallery from './gallery'
 import richText from './richText'
 import figure from './figure'
+import social from './social'
+import home from './home'
 
 // import bodyPortableText from './objects/bodyPortableText'
 
@@ -37,6 +39,8 @@ export default createSchema({
     gallery,
     richText,
     figure,
+    social,
+    home,
     // bodyPortableText,
     // category,
     // When added to this list, object types can be used as

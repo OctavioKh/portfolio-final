@@ -8,6 +8,7 @@ import Project from './components/Project';
 import NavBar from './components/NavBar';
 import Contacto from './components/Contacto';
 import React from 'react';
+import NavBar2 from './components/Footer';
 
 
 
@@ -23,6 +24,7 @@ function App() {
     <Route caseSensitive={false} element={<Project />} path='/project' />
     <Route caseSensitive={false} element={<Contacto />} path='/contacto' />
     </Routes>
+    <NavBar2/>
     </Router>
   );
 }

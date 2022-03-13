@@ -3,10 +3,8 @@ import sanityClient from "../client.js";
 import BlockContent from "@sanity/block-content-to-react";
 import image01 from '../bg01.png';
 
-/** Components */
 const Card = props => (
   <div className="card">
- 
     {props.children}
   </div>
 );
