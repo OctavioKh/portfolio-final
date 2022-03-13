@@ -23,7 +23,12 @@ export default function About() {
             _id,
             url
         },
-    }} `
+    },logoImage2{
+      asset->{
+          _id,
+          url
+      },
+  }} `
       )
       .then((data) => setAboutData(data[0]))
       .catch(console.error);
@@ -68,7 +73,7 @@ export default function About() {
         <h2>&#8212;</h2>
         <br />
         <img
-          src="https://cartel.eco/img/LOGO-03.png"
+          src={urlFor(aboutData.logoImage2).url()}
           alt="CARTEL"
           className="centered logox"
         />

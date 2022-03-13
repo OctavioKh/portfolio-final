@@ -10,6 +10,16 @@ export default {
       type: "string",
     },
     {
+      name: "linkFb",
+      title: "Facebook",
+      type: "string",
+    },
+    {
+      name: "linkYt",
+      title: "Youtube",
+      type: "string",
+    },
+    {
       name: "logoImage1",
       title: "Logo",
       type: "image",
