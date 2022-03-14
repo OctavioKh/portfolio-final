@@ -26,7 +26,13 @@ export default function NavBar2() {
                   _id,
                   url
               },
-        }
+        },
+        logoImage1 {
+          asset->{
+              _id,
+              url
+          },
+    }
      }`
       )
       .then((data) => setSocialData(data[0]))
@@ -57,7 +63,9 @@ export default function NavBar2() {
           }
             className="inflex-flex items-center py-6 px-3 mr-4 text-white text-4xl font-bold cursive tracking-widest hover:text-gray-100"
           >
-           <img className="logo animate__animated animate__fadeIn" alt="Logo Cartel" style={{width:50,height:50}} src={urlFor(socialData.logoImage2).url()}/>
+            
+            <img className="navbar-logob logo animate__animated animate__fadeIn" alt="Logo Cartel" style={{width:150}} src={urlFor(socialData.logoImage2).url()}/>
+          <img className="navbar-logoa animate__animated animate__fadeIn" alt="Logo Cartel" style={{width:150}} src={urlFor(socialData.logoImage1).url()}/>
           </NavLink>
           
         </nav>

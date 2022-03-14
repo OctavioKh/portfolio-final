@@ -45,18 +45,18 @@ export default function About() {
         <img src={urlFor(aboutData.mainImage).url()} alt="foto-about" />
       </div>
 
-      <section className="relative container  justify-center min-h-screen  lg:pt-8 px-6">
-        <h1 className=" animate__animated ctitle animate__fadeIn lg:text-6xl md:text-3xl text-white align-middle text-center	pt-16 mt-16 font-bold cursive leading-none lg:leading-snug home-name">
+      <section className="relative container  justify-center min-h-screen  lg:pt-8 px-4">
+        <h1 className=" justify-center	 animate__animated ctitle animate__fadeIn lg:text-6xl md:text-3xl text-white align-middle text-center	pt-16 mt-16 font-bold cursive leading-none lg:leading-snug home-name">
           {aboutData.ctitle}
         </h1>
         <h1 className="espacio">&nbsp;</h1>
-        <span className="text-white text-lg btitle text-center introduccion">
+        <span className=" justify-center	text-white text-md btitle text-center introduccion">
           {aboutData.btitle}{" "}
         </span>
         <h1 className="espacio2">&nbsp;</h1>
       </section>
       <hr />
-      <div className="px-10 lg:px-48 py-12 text-white lg:py-20 prose lg:prose=xl max-w-full">
+      <div className="px-10  justify-center	 lg:px-48 py-12 text-white lg:py-20 prose lg:prose=xl max-w-full">
         <BlockContent
           blocks={aboutData.bio}
           projectId="8p2h4cq6"
@@ -67,7 +67,7 @@ export default function About() {
 
       <div id="logo_div">
         <h1 className="espacio2">&nbsp;</h1>
-        <h1 className="text-5xl text-white flex justify-center cursive">
+        <h1 className="text-5xl text-white flex text-center justify-center cursive">
           {aboutData.atitle}
         </h1>
         <h2>&#8212;</h2>
@@ -82,3 +82,4 @@ export default function About() {
     </main>
   );
 }
+

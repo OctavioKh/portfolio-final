@@ -17,6 +17,8 @@ import richText from './richText'
 import figure from './figure'
 import social from './social'
 import home from './home'
+import bodyPortableText from './bodyPortableText'
+
 
 // import bodyPortableText from './objects/bodyPortableText'
 
@@ -42,7 +44,7 @@ export default createSchema({
     social,
     author,
     
-    // bodyPortableText,
+     bodyPortableText,
     // category,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas

@@ -116,7 +116,7 @@ export default function Project() {
           Welcome to page
         </h2> */}
           <h1 className="espacio">&nbsp;</h1>
-          <section className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8">
+          <section className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-8">
             {projectData &&
               projectData.map((project, index) => (
                 <article
@@ -133,7 +133,7 @@ export default function Project() {
                     </a>
                   </h3>
 
-                  <div className="text-gray-500 text-xs space-x-4">
+                  <div className="text-gray-500 text-xs">
                     <span>
                       <strong className="font-bold">Fecha</strong>:{" "}
                       {new Date(project.date).toLocaleDateString()}

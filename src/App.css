@@ -2,6 +2,7 @@
 
 body {
   font-family: "Gotham Book", Helvetica, sans-serif;
+  letter-spacing:1px;
 }
 
 h1 {
@@ -194,12 +195,12 @@ label:hover {
   object-fit: cover;
   /* overflow: hidden;
   display: flex; */
-  width: 23.2rem !important;
-  height: 23.2rem !important;
+  width: 35.2rem !important;
+  height: 30.2rem !important;
 }
 
 .caja-z {
-  max-width: 23rem !important;
+  max-width: 35rem !important;
 }
 
 body {
@@ -778,11 +779,42 @@ input[type="submit"]:hover {
 }
 
 .navbar-logo1{
-padding-top:1rem;}
+padding-top:1.3rem;
+width:100px !important;}
 
 
+.navbar-logoa{
+  display:none;
+
+}
 
 
+@media screen and (max-width: 960px){
+  .navbar-logoa {
+      display: block ;
+      position: absolute;
+      max-width: 250px;
+    }
+    .navbar-logob{
+      display:none ;
+    }
+  
+  }
+  
+  .navbar-logoa {
+    padding-left:1rem;
+    padding-top:2rem;
+    max-width: 100px;
+ 
+  }
+  
+  .navbar-logob{
+   
+ 
+ max-width:70px }
+  
+  
+  
 
 
 /* Small devices (iphone, 576px and up) */
@@ -842,6 +874,6 @@ padding-top:1rem;}
 }
 
 .linku {
-  font-size:12px;
+  font-size:11px;
   letter-spacing:1px;
 }

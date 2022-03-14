@@ -7,6 +7,25 @@ import getYouTubeId from 'get-youtube-id'
 import YouTube from 'react-youtube'
 import PortableText from '@sanity/block-content-to-react'
 
+
+const serializers = {
+    types: {
+      youtube: ({node}) => {
+        const { url } = node
+        const id = getYouTubeId(url)
+        return (<YouTube videoId={id} />)
+      }
+    }
+}
+
+ function Body ({blocks}) {
+  return (
+    <PortableText blocks={blocks} serializers={serializers} />
+  )
+}
+
+// SINGLE PROYECTOS 
+
 // const serializers = {
 //     types: {
 //       youtube: ({node}) => {
@@ -67,6 +86,7 @@ export default function SinglePost() {
             <div className=" bg-opacity-0 p-12">
               <h1 className="cursive text-white  text-3xl lg:text-6xl mb-4">
                 <b> {singlePost.title}</b>
+                <><Body/></>
               </h1>
               {/* <div className="flex justify-center text-gray-800">
                 <img
