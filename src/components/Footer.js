@@ -34,6 +34,7 @@ export default function NavBar2() {
   }, []);
 
   if (!socialData) return <div> Loading...</div>;
+  
 
 
     let activeStyle = {
@@ -62,8 +63,8 @@ export default function NavBar2() {
         </nav>
         <div className="inline-flex py-3 px-3 my-6">
           <SocialIcon className="mr-4" target="_blank" bgColor="#232323" network="instagram" fgColor="#fff" style={{height:35, width: 35}} alt="instagram" url={socialData.linkIg}  />
-          <SocialIcon className="mr-4" target="_blank" bgColor="#232323"  network="facebook" fgColor="#fff" style={{height:35, width: 35}} alt="facebook" url={socialData.linkFb}  />
-          <SocialIcon className="mr-4" target="_blank" bgColor="#232323"  network="youtube" fgColor="#fff" style={{height:35, width: 35}} alt="facebook" url={socialData.linkYt}  />
+          {/* <SocialIcon className="mr-4" target="_blank" bgColor="#232323"  network="facebook" fgColor="#fff" style={{height:35, width: 35}} alt="facebook" url={socialData.linkFb}  />
+          <SocialIcon className="mr-4" target="_blank" bgColor="#232323"  network="youtube" fgColor="#fff" style={{height:35, width: 35}} alt="youtube" url={socialData.linkYt}  /> */}
         </div>
        
       </div>

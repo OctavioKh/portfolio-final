@@ -60,7 +60,7 @@ class NameForm extends React.Component {
     this.state = {
       name: {
         name: 'name',
-        label: 'Name',
+        label: 'Nombre',
         value: '',
         focus: false,
       },
@@ -72,7 +72,7 @@ class NameForm extends React.Component {
       },
       message: {
         name: 'message',
-        label: 'Message',
+        label: 'Mensaje',
         value: '',
         focus: false,
       },

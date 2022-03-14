@@ -45,18 +45,18 @@ export default function About() {
         <img src={urlFor(aboutData.mainImage).url()} alt="foto-about" />
       </div>
 
-      <section className="relative container  justify-center min-h-screen  lg:pt-8 px-8">
-        <h1 className=" animate__animated animate__fadeIn lg:text-6xl md:text-3xl text-white align-middle text-center	pt-16 mt-16 font-bold cursive leading-none lg:leading-snug home-name">
+      <section className="relative container  justify-center min-h-screen  lg:pt-8 px-6">
+        <h1 className=" animate__animated ctitle animate__fadeIn lg:text-6xl md:text-3xl text-white align-middle text-center	pt-16 mt-16 font-bold cursive leading-none lg:leading-snug home-name">
           {aboutData.ctitle}
         </h1>
-        <br />
-        <span className="text-white text-lg  text-center introduccion">
+        <h1 className="espacio">&nbsp;</h1>
+        <span className="text-white text-lg btitle text-center introduccion">
           {aboutData.btitle}{" "}
         </span>
         <h1 className="espacio2">&nbsp;</h1>
       </section>
       <hr />
-      <div className="px-16 lg:px-48 py-12 text-white lg:py-20 prose lg:prose=xl max-w-full">
+      <div className="px-10 lg:px-48 py-12 text-white lg:py-20 prose lg:prose=xl max-w-full">
         <BlockContent
           blocks={aboutData.bio}
           projectId="8p2h4cq6"

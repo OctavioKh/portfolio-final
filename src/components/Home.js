@@ -38,7 +38,7 @@ export default function Home() {
 <main className="fondo">
     <img src={urlFor(homeData.mainImage).url()} alt="background" className="absolute object-cover w-full h-full animate__animated animate__fadeIn"/>
     <section className="relative flex justify-center min-h-screen  lg:pt-40 px-8">
-        <h1 className=" animate__animated animate__fadeIn  md:text-6xl lg:text-10xl text-white align-middle text-center	 font-bold cursive leading-none lg:leading-snug home-name">{homeData.ctitle}</h1>
+        <h1 className=" animate__animated animate__fadeIn home-texto md:text-6xl lg:text-10xl text-white align-middle text-center	 font-bold cursive leading-none lg:leading-snug home-name">{homeData.ctitle}</h1>
     </section>
 </main>)
 };
