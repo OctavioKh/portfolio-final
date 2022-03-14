@@ -8,6 +8,8 @@ import YouTube from 'react-youtube'
 import PortableText from '@sanity/block-content-to-react'
 
 
+// SINGLE PROYECTOS 
+
 const serializers = {
     types: {
       youtube: ({node}) => {
@@ -18,29 +20,12 @@ const serializers = {
     }
 }
 
- function Body ({blocks}) {
+ function Body (blocks) {
   return (
     <PortableText blocks={blocks} serializers={serializers} />
   )
 }
 
-// SINGLE PROYECTOS 
-
-// const serializers = {
-//     types: {
-//       youtube: ({node}) => {
-//         const { url } = node
-//         const id = getYouTubeId(url)
-//         return (<YouTube videoId={id} />)
-//       }
-//     }
-// }
-
-// function Body ({blocks}) {
-//   return (
-//     <PortableText blocks={blocks} serializers={serializers} />
-//   )
-// }
 
 
 
@@ -60,13 +45,16 @@ export default function SinglePost() {
         title,
         _id,
         slug,
+        
         mainImage{
             asset->{
                 _id,
                 url
             }
         },
-        body,
+        
+        body 
+        ,
         "name": author->name,
         "authorImage": author->image
 
@@ -86,7 +74,7 @@ export default function SinglePost() {
             <div className=" bg-opacity-0 p-12">
               <h1 className="cursive text-white  text-3xl lg:text-6xl mb-4">
                 <b> {singlePost.title}</b>
-                <><Body/></>
+          
               </h1>
               {/* <div className="flex justify-center text-gray-800">
                 <img
@@ -113,9 +101,14 @@ export default function SinglePost() {
             projectId="8p2h4cq6"
             dataset="production"
           />
-          {/* <Body/> */}
+         
         </div>
+        
+
       </article>
+      <div align="youtube-centrado">
+      <iframe className="youtube-vid mx-auto justify-center text-center"  src={singlePost.body[1].url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
     </main>
   );
 }

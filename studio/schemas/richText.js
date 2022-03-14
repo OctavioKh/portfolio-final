@@ -1,13 +1,15 @@
 export default {
-    name: 'richText',
-    type: 'array',
-    of: [
-        {
-            type: 'block',},
-            {
-            type: 'figure',},
-            {
-            type: 'youtube',}
-        
-    ]
-}
+  name: "richText",
+  type: "array",
+  of: [
+    {
+      type: "block",
+    },
+    {
+      type: "figure",
+    },
+    {
+      type: "youtube",
+    },
+  ],
+};

@@ -825,6 +825,14 @@ width:100px !important;}
 .introduccion {
   font-size: 1.5rem;
 }
+
+.youtube-vid {
+
+  width: 30rem;
+  height: 20rem;
+  
+}
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -835,6 +843,14 @@ width:100px !important;}
  .introduccion {
   font-size: 2rem;
 }
+
+.youtube-vid {
+
+  width: 33rem;
+  height: 22rem;
+  
+}
+
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -846,18 +862,32 @@ width:100px !important;}
   font-size: 2rem;
 }
 
+.youtube-vid {
+
+  width: 45rem;
+  height: 27rem;
+  
+}
+
+
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
 .home-texto{
-
-
   
 }
 .introduccion {
   font-size: 2rem;
 }
+
+.youtube-vid {
+
+  width: 55rem;
+  height: 33rem;
+  
+}
+
 
 }
 
@@ -871,9 +901,21 @@ width:100px !important;}
   font-size: 2rem;
 }
  
+.youtube-vid {
+
+  width: 55rem;
+  height: 33rem;
+  
+}
+
+
+
 }
 
 .linku {
   font-size:11px;
   letter-spacing:1px;
 }
+
+
+
