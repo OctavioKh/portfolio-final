@@ -18,6 +18,7 @@ import figure from './figure'
 import social from './social'
 import home from './home'
 import bodyPortableText from './objects/bodyPortableText'
+import galeria from './galeria'
 
 
 // import bodyPortableText from './objects/bodyPortableText'
@@ -44,6 +45,7 @@ export default createSchema({
     social,
     author,
      bodyPortableText,
+     galeria,
     // category,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas

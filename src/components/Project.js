@@ -107,7 +107,7 @@ export default function Project() {
 
   return (
     <>
-      <main className="fondo min-h-screen p-12  ">
+      <main className="fondo min-h-screen p-5  ">
         <section className=" animate__animated animate__fadeIn container mx-auto">
           <h1 className="text-5xl text-white flex justify-center cursive">
             NOTICIAS
@@ -116,12 +116,12 @@ export default function Project() {
           Welcome to page
         </h2> */}
           <h1 className="espacio">&nbsp;</h1>
-          <section className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-8">
+          <section className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-6">
             {projectData &&
               projectData.map((project, index) => (
                 <article
                   key={index}
-                  className="relative rounded-lg  p-16"
+                  className="relative rounded-lg  p-2"
                 >
                   <h3 className="text-white text-3xl font-bold mb-2 hover:text-grey">
                     <a
@@ -138,6 +138,7 @@ export default function Project() {
                       <strong className="font-bold">Fecha</strong>:{" "}
                       {new Date(project.date).toLocaleDateString()}
                     </span>
+                    <br/>
                     <span>
                       <strong className="font-bold">Locación</strong>:{" "}
                       {project.place}

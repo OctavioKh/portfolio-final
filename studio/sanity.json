@@ -1,7 +1,8 @@
 {
   "root": true,
   "project": {
-    "name": "studio"
+    "name": "CARTEL.ECO",
+    "basePath": "/studio"
   },
   "api": {
     "projectId": "8p2h4cq6",
@@ -11,7 +12,8 @@
     "@sanity/base",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool"
+    "@sanity/desk-tool",
+    "@andre-brdoch/sanity-plugin-schema-inspector"
   ],
   "env": {
     "development": {
@@ -25,9 +27,5 @@
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
     }
-  ],
-  "project": {
-    "name": "CARTEL.ECO",
-    "basePath": "/studio"
-  }
+  ]
 }
