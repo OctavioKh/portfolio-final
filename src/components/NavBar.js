@@ -72,10 +72,10 @@ isActive ? activeStyle : undefined
 isActive ? activeStyle : undefined
 } className=" linku animate__animated animate__fadeIn inflex-flex items-center py-6 px-3 my-6 rounded text-white hover:text-gray-100"
 
-to="/post" >Proyectos</NavLink>
+to="/proyectos" >Proyectos</NavLink>
 <NavLink  style={({ isActive }) =>
 isActive ? activeStyle : undefined
-} className=" linku  animate__animated animate__fadeIn inflex-flex items-center py-6 px-3 my-6 rounded text-white hover:text-gray-100" to="/project">Noticias</NavLink>
+} className=" linku  animate__animated animate__fadeIn inflex-flex items-center py-6 px-3 my-6 rounded text-white hover:text-gray-100" to="/noticias">Noticias</NavLink>
 
 <NavLink  style={({ isActive }) =>
 isActive ? activeStyle : undefined

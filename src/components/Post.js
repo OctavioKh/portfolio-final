@@ -11,7 +11,7 @@ export default function Post() {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == "post"]{
+        `*[_type == "post"] | order(_createdAt asc) {
         title,
         slug,
         mainImage{
@@ -38,7 +38,7 @@ export default function Post() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {postData &&
             postData.map((post, index) => (
-              <article className="fondo">
+              <article key={index} className="fondo">
                 <Link to={"/post/" + post.slug.current} key={post.slug.current}>
                   <span
                     className="fondo block h-64 relative rounded shadow leading-snug   borderg-green-400"

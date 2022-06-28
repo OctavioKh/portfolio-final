@@ -20,8 +20,8 @@ function App() {
     <Route caseSensitive={false} element={<Home />} path='/' exact />
     <Route caseSensitive={false} element={<About />} path='/about' />
     <Route caseSensitive={false} element={<SinglePost />} path='/post/:slug' />
-    <Route caseSensitive={false} element={<Post />} path='/post' />
-    <Route caseSensitive={false} element={<Project />} path='/project' />
+    <Route caseSensitive={false} element={<Post />} path='/proyectos' />
+    <Route caseSensitive={false} element={<Project />} path='/noticias' />
     <Route caseSensitive={false} element={<Contacto />} path='/contacto' />
     </Routes>
     <NavBar2/>
