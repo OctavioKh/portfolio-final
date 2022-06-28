@@ -67,25 +67,25 @@ export default function NavBar2() {
 
 <NavLink   style={({ isActive }) =>
 isActive ? activeStyle : undefined
-} className="linku animate__animated animate__fadeIn inflex-flex items-center py-6 px-3 my-6 rounded text-white hover:text-gray-100" to="/about">About</NavLink>
+} className="linku animate__animated animate__fadeIn inflex-flex items-center py-6 px-2 my-6 rounded text-white hover:text-gray-100" to="/about">About</NavLink>
 <NavLink  style={({ isActive }) =>
 isActive ? activeStyle : undefined
-} className=" linku animate__animated animate__fadeIn inflex-flex items-center py-6 px-3 my-6 rounded text-white hover:text-gray-100"
+} className=" linku animate__animated animate__fadeIn inflex-flex items-center py-6 px-2 my-6 rounded text-white hover:text-gray-100"
 
 to="/proyectos" >Proyectos</NavLink>
 <NavLink  style={({ isActive }) =>
 isActive ? activeStyle : undefined
-} className=" linku  animate__animated animate__fadeIn inflex-flex items-center py-6 px-3 my-6 rounded text-white hover:text-gray-100" to="/noticias">Noticias</NavLink>
+} className=" linku  animate__animated animate__fadeIn inflex-flex items-center py-6 px-2 my-6 rounded text-white hover:text-gray-100" to="/noticias">Noticias</NavLink>
 
 <NavLink  style={({ isActive }) =>
 isActive ? activeStyle : undefined
-} className=" linku animate__animated animate__fadeIn inflex-flex items-center py-6 px-3 my-6 rounded text-white hover:text-gray-100"
+} className=" linku animate__animated animate__fadeIn inflex-flex items-center py-6 px-2 my-6 rounded text-white hover:text-gray-100"
 
 to="/contacto" >Contacto</NavLink>
           
         </nav>
 
-        {/* <div className="inline-flex py-3 px-3 my-6">
+        {/* <div className="inline-flex py-3 px-2 my-6">
           <SocialIcon className="mr-4" target="_blank" bgColor="#232323"  fgColor="#fff" style={{height:35, width: 35}} alt="instagram" url={socialData.linkIg}  />
         </div> */}
       </div>

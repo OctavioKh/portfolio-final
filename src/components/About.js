@@ -46,17 +46,19 @@ export default function About() {
       </div>
 
       <section className="relative container  justify-center min-h-screen  lg:pt-8 px-4">
-        <h1 className=" justify-center	 animate__animated ctitle animate__fadeIn lg:text-6xl md:text-3xl text-white align-middle text-center	pt-16 mt-16 font-bold cursive leading-none lg:leading-snug home-name">
+        <h1 className=" justify-center	 animate__animated ctitle animate__fadeIn lg:text-6xl md:text-3xl sm:text-lg text-white align-middle text-center	pt-16 mt-16 font-bold cursive leading-none lg:leading-snug home-name">
           {aboutData.ctitle}
         </h1>
         <h1 className="espacio">&nbsp;</h1>
-        <span className=" justify-center	text-white text-md btitle text-center introduccion">
+        <span className=" justify-center	text-white lg:w-6/12 md:w-7/12 sm:w-11/12 lg:pb-20 lg:pt-8 text-md btitle text-center introduccion">
           {aboutData.btitle}{" "}
         </span>
-        <h1 className="espacio2">&nbsp;</h1>
+        {/* <h1 className="espacio2">&nbsp;</h1> */}
       </section>
       <hr />
-      <div className="px-10  justify-center	 lg:px-48 py-12 text-white lg:py-20 prose lg:prose=xl max-w-full">
+      <div className="px-10  justify-center	 lg:px-48 py-12 text-white lg:py-20 prose lg:prose=xl max-w-full"
+      style={{textAlign:"justify"}}
+      >
         <BlockContent
           blocks={aboutData.bio}
           projectId="8p2h4cq6"

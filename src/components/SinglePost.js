@@ -20,27 +20,24 @@ const serializers = {
       const id = getYouTubeId(url);
       return (
         <>
-      <br/> <br/>
-      <YouTube videoId={id} 
-      
-      className="youtube-vid mx-auto justify-center text-center"
-      
-      />
-       <br/> <br/>
-      </>
-      )
+          <br /> <br />
+          <YouTube
+            videoId={id}
+            className="youtube-vid mx-auto justify-center text-center"
+          />
+          <br /> <br />
+        </>
+      );
     },
   },
 };
-
-
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
   return builder.image(source);
 }
 
-export default function SinglePost({blocks}) {
+export default function SinglePost({ blocks }) {
   const [singlePost, setSinglePost] = useState(null);
   const [modal, setModal] = useState(null);
   const [selected, setSelected] = useState(null);
@@ -78,12 +75,11 @@ export default function SinglePost({blocks}) {
       .catch(console.error);
   }, [slug]);
 
-
-  useEffect(() =>{
+  useEffect(() => {
     console.log(singlePost);
-  //  let fotos = singlePost.galeria;
+    //  let fotos = singlePost.galeria;
     // console.log(fotos);
-  })
+  });
 
   const toggle = (fotos) => {
     setSelected(fotos);
@@ -94,7 +90,6 @@ export default function SinglePost({blocks}) {
     setSelected(null);
     setModal(false);
   };
-
 
   if (!singlePost) return <div> Loading...</div>;
 
@@ -116,8 +111,10 @@ export default function SinglePost({blocks}) {
             stlye={{ height: "400px" }}
           />
         </header>
-        <div className="px-8 lg:px-48 py-12 text-white lg:py-20 prose lg:prose=xl max-w-full"
-        style={{textAlign:"justify"}}>
+        <div
+          className=" sm:px-1 md:px-8 lg:px-48 py-12 text-white lg:py-20 prose lg:prose=xl max-w-full"
+          style={{ textAlign: "justify" }}
+        >
           <BlockContent
             blocks={singlePost.body}
             projectId="8p2h4cq6"
@@ -125,26 +122,24 @@ export default function SinglePost({blocks}) {
             serializers={serializers}
           />
 
-<br/><br/><br/>
+          <br />
+          <br />
+          <br />
 
-{singlePost.galeria.images.map((fotos, id) => (
-        <div key={id}>
-  <img 
-         key={id}
-         alt={id}
-          className="testimonialImages d-block"
-          src={fotos.link}
-          onClick={() => toggle(fotos)}
-          style={{width:"70%"}}
-     
-        />
-        <br/>
-        </div>
-      
-     
-    ))} 
+          {singlePost.galeria.images.map((fotos, id) => (
+            <div key={id}>
+              <img
+                key={id}
+                alt={id}
+                className="fotos-proyectos d-block"
+                src={fotos.link}
+                onClick={() => toggle(fotos)}
+              />
+              <br />
+            </div>
+          ))}
 
-<Modal
+          <Modal
             className="modalx"
             isOpen={modal}
             fullscreen
@@ -153,45 +148,38 @@ export default function SinglePost({blocks}) {
             data-keyboard="false"
           >
             <ModalBody>
-            
-               
-                  <button onClick={closeModal} style={{ float: "right",
-    position: "fixed",
-    top: "1%",
-    right: "2%",
-    fontSize: '50px',
-    border: "rgba(0,0,0,0)"
-  }}>
-                    X
-                  </button>
-<div>
+              <button
+                onClick={closeModal}
+                style={{
+                  float: "right",
+                  position: "fixed",
+                  top: "1%",
+                  right: "2%",
+                  fontSize: "50px",
+                  border: "rgba(0,0,0,0)",
+                }}
+              >
+                X
+              </button>
 
-<img
-                  className="talento-pic"
-                    style={{
-                      width: "60%",
-                      objectFit: "cover",
-                      height:"auto",
-                      margin: "0 auto",
-                      padding: " 20px",
-                    }}
-                    src={selected && selected.link}
-                    alt=""
-                  />
-
-</div>
-
-</ModalBody>
+              <div className="align-middle inline-block flex justify-center items-center h-screen">
+                <img className="align-middle inline-block"
+                  style={{
+                    objectFit: "cover",
+                    height: "auto",
+                    margin: "0 auto",
+                    padding: " 20px",
+                  }}
+                  src={selected && selected.link}
+                  alt=""
+                />
+              </div>
+            </ModalBody>
           </Modal>
-
         </div>
       </article>
 
-
       <br />
-
-
-
 
       <br />
       {/* <div align="youtube-centrado">
@@ -213,5 +201,3 @@ export default function SinglePost({blocks}) {
 // export default function SinglePost() {
 // return <h1>SinglePost Page!</h1>
 // }
-
-
